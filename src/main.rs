@@ -4,6 +4,7 @@ struct Toast {
     name: String,
     description: String,
     img_href: String,
+    suggested_pairings: String,
 }
 
 fn main() {
@@ -12,17 +13,20 @@ fn main() {
         Toast {
             name: "RAW TOAST".to_owned(),
             description: "Served straight or on the rocks.".to_owned(),
-            img_href: "assets/images/raw_toast.jpg".to_owned()
+            img_href: "assets/images/raw_toast.jpg".to_owned(),
+            suggested_pairings: "butter".to_owned()
         },
         Toast {
             name: "FRENCH TOAST".to_owned(),
             description: "pan-fried goodness.".to_owned(),
-            img_href: "assets/images/french_toast.jpg".to_owned()
+            img_href: "assets/images/french_toast.jpg".to_owned(),
+            suggested_pairings: "maple syrup".to_owned()
         },
         Toast {
             name: "PEANUT BUTTER POWER TOAST".to_owned(),
             description: "peanut butter, banana, and chia seeds. FEEL THE POWER!".to_owned(),
             img_href: "assets/images/peanut_butter_power_toast.jpg".to_owned()
+            suggested_pairings: "avocado".to_owned(),
         }
     ];
 
@@ -36,4 +40,7 @@ fn main() {
     println!("<p>Today's special is {}</p>", toasts[selected_toast].name);
     println!("<p>{}</p>", toasts[selected_toast].description);
     println!("<p><img src='{}' /></p>", toasts[selected_toast].img_href);
+
+    println!("<h3>SUGGESTED PAIRINGS</h3>");
+    println!("<p>{}</p>", toasts[selected_toast].suggested_pairings);
 }
