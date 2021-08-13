@@ -25,8 +25,8 @@ fn main() {
         Toast {
             name: "PEANUT BUTTER POWER TOAST".to_owned(),
             description: "peanut butter, banana, and chia seeds. FEEL THE POWER!".to_owned(),
-            img_href: "assets/images/peanut_butter_power_toast.jpg".to_owned()
-            suggested_pairings: "avocado".to_owned(),
+            img_href: "assets/images/peanut_butter_power_toast.jpg".to_owned(),
+            suggested_pairings: "avocado".to_owned()
         }
     ];
 
