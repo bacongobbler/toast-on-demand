@@ -5,3 +5,4 @@ authors = ["itowlson", "bacongobbler"]
 edition = "2018"
 
 [dependencies]
+rand = "0.8"
